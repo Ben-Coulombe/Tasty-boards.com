@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tasty Boards</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="f">
+	<link rel="stylesheet" href="style.css">
+	<link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: [ 'dayGrid' ]
+        });
+
+        calendar.render();
+      });
+
+    </script>
+</head>
+<body>
+	
+	<header class="main-header">
+		<h1 class="name"><a href="index">Tasty Boards</a></h1>
+		<ul class="main-nav">
+			<li><a href="about">About Us</a></li>
+			<li><a href="products">Products</a></li>
+			<li><a href="photos">Photos</a></li>
+			<li><a href="calendar">Calendar</a></li>
+		</ul>
+	</header><!--/.main-header-->   
+
+	<div class="banner clearfix">
+		<div class="primary col">
+		<div id='calendar'></div></div>
+		<img class="logo secondary col" src="https://playswellwithbutter.com/wp-content/uploads/2018/04/ULTIMATE-ALDI-CHEESE-BOARD-8.jpg" alt="City">
+	</div>
+
+	
+	
+	
+	<!--/.primary-->
+
+	
+	<!--<div class="tertiary col">
+		<!<h2><!Areas we serve</h2>
+		<!<p><!Livermore, Pleasanton, Dublin, San Ramon, Sunol & Danville</p>
+		<!<p><strong><!How Can I order? </strong><!You can fill out the online order form, email, call or text. We will respond the same day to confirm and get the tasting on the to you.</p>
+		<!<p><!<strong><!When Should I Order: </strong><!The sooner the better but we need a minimum of 2 days notice to get you the freshest ingredients available.</p>
+		<!<p><!<strong><!How Can I Pay: </strong><!You can pay via, Venmo, Paypal, Cash & Check upon delivery is also a great option.</p>
+	<!</div><!--/.tertiary-->	
+
+	<footer class="main-footer">
+		
+  <section id="order form">
+  
+    </section>
+    
+		<span>&copy; Tasty Boards BC.</span>
+	</footer>
+	
+</body>
+</html>
